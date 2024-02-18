@@ -78,6 +78,8 @@ module.exports = {
           DEFAULT: "rgb(var(--muted))",
           foreground: "rgb(var(--muted-foreground))",
           100: "rgb(var(--muted-100))",
+          200: "rgb(var(--muted-200))",
+          50: "rgb(var(--muted-50))",
           selected: "rgb(var(--muted-selected))",
           "foreground-selected": "rgb(var(--muted-foreground-selected))",
         },
@@ -172,7 +174,9 @@ module.exports = {
           "--secondary-foreground": "0 0 0",
 
           "--muted": "235 238 242",
+          "--muted-50": "248 247 242",
           "--muted-100": "237 235 225",
+          "--muted-200": "233, 231, 224",
           "--muted-selected": "232 240 245",
 
           "--muted-foreground": "134 134 134",

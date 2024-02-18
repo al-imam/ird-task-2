@@ -23,9 +23,6 @@ export function Nav() {
             <Link href="#">সকল ক্যাটাগরি</Link>
           </li>
           <li>
-            <Link href="#">সকল ক্যাটাগরি</Link>
-          </li>
-          <li>
             <Link href="#">সকল দোয়া</Link>
           </li>
           <li>

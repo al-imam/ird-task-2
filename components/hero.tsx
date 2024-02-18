@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <div className="relative grid grid-cols-2 items-center text-foreground">
-      <div className="space-y-3">
-        <p className="rounded-10px w-max bg-muted-100 px-4 py-2.5 text-sm font-semibold">
+    <div className="relative grid grid-cols-2 text-foreground">
+      <div className="mt-[119px]">
+        <p className="rounded-10px mb-3 w-max bg-muted-100 px-4 py-2.5 text-sm font-semibold">
           আস-সালামু 'আলাইকুম ওয়া রহমাতুল্লাহি ওয়া বারকাতুহু
         </p>
 
-        <div className="space-y-8">
+        <div className="flex flex-col gap-y-8">
           <h1 className="text-5xl font-bold leading-normal">দোয়া ও যিকরঃ কুরআন মাজীদের রাব্বানা দোয়া এবং মাসনূন আমল</h1>
 
           <p className="font-anek text-base">
@@ -36,7 +36,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="absolute bottom-[147px] flex items-center gap-3 font-medium">
+        <div className="mt-[137px] flex items-center gap-3 font-medium">
           <MouseIcon />
           <span>স্ক্রল করুন</span>
         </div>
