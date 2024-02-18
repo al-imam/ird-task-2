@@ -157,7 +157,7 @@ module.exports = {
       addBase({
         [[":root", ".light"]]: {
           "--background": "255 255 255",
-          "--foreground": "57 57 57",
+          "--foreground": "41 45 50",
 
           "--card": "255 255 255",
           "--card-foreground": "0 0 0",
@@ -172,7 +172,7 @@ module.exports = {
           "--secondary-foreground": "0 0 0",
 
           "--muted": "235 238 242",
-          "--muted-100": "247 248 250",
+          "--muted-100": "237 235 225",
           "--muted-selected": "232 240 245",
 
           "--muted-foreground": "134 134 134",
