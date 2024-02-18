@@ -39,10 +39,10 @@ export function Nav() {
         </ul>
 
         <div className="flex items-center gap-6 text-base">
-          <button className="border-secondary-outline flex aspect-square h-10 w-10 items-center justify-center rounded-[0.625rem] border-2">
+          <button className="flex aspect-square h-10 w-10 items-center justify-center rounded-[0.625rem] border-2 border-secondary-outline">
             <LightThemeIcon />
           </button>
-          <button className="primary-btn border-primary-outline flex items-center gap-1.5 rounded-[0.625rem] border-2 px-5 py-2.5 text-base text-white">
+          <button className="primary-btn flex items-center gap-1.5 rounded-[0.625rem] border-2 border-primary-outline px-5 py-2.5 text-base text-white">
             সাপোর্ট করুন <DoubleHeartIcon />
           </button>
         </div>

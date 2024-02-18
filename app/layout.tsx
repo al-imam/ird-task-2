@@ -38,7 +38,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head>
         <link rel="icon" href="/icons/dua-logo.svg" />
       </head>
-      <body className={`font-hind ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined}`}>
+      <body className={`pb-10 font-hind ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined}`}>
         <Provider>
           <Nav />
           {children}

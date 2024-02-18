@@ -1,4 +1,5 @@
-import { ClockIcon } from "$icons";
+import { BookmarkIcon, ClockIcon, PinIcon } from "$icons";
+import React from "react";
 
 function getRandomNumbers(min: number, max: number, length: number): number[] {
   const randomNumbers: number[] = [];
@@ -11,21 +12,21 @@ function getRandomNumbers(min: number, max: number, length: number): number[] {
   return randomNumbers;
 }
 
-export function Collection() {
+export function Collection({ className, ...rest }: React.ComponentProps<"div">) {
   return (
-    <div className="space-y-10 rounded-xl bg-muted-50 p-7">
-      <div className="flex items-center justify-between">
+    <div className={"space-y-7 rounded-xl bg-muted-50 p-7 " + className} {...rest}>
+      <div className="flex h-[38px] items-center justify-between">
         <h2 className="text-2xl font-bold">কালেকশন</h2>
 
-        <div className="bg-muted-200 flex gap-1.5 rounded-md p-1">
-          <button className="flex gap-2 rounded-md bg-white p-2 shadow-sm">
-            <ClockIcon /> সর্বশেষ পঠিত দোয়া
+        <div className="flex gap-1 rounded-md bg-muted-200 p-1">
+          <button className="flex items-center gap-2 rounded-md bg-white p-1.5 shadow-sm">
+            <ClockIcon className="h-[1.125rem] w-[1.125rem]" /> সর্বশেষ পঠিত দোয়া
           </button>
-          <button className="flex gap-2 rounded-md bg-transparent p-2">
-            <ClockIcon /> সর্বশেষ পঠিত দোয়া
+          <button className="flex items-center gap-2 rounded-md bg-transparent p-1.5">
+            <BookmarkIcon /> বুকমার্কস
           </button>
-          <button className="flex gap-2 rounded-md bg-transparent p-2">
-            <ClockIcon /> সর্বশেষ পঠিত দোয়া
+          <button className="flex items-center gap-2 rounded-md bg-transparent p-1.5">
+            <PinIcon /> পিনস
           </button>
         </div>
       </div>
@@ -45,7 +46,7 @@ function CollectionCard({ num }: { num: number }) {
       <ClockIcon />
       <div className="space-y-1">
         <span className="text-base font-semibold">দোয়ার গুরুত্ব</span>
-        <p className="flex gap-1 text-sm">
+        <p className="flex gap-1 text-xs">
           <span>সর্বশেষ পঠিত দোয়া নং</span> <span>{num}</span>
         </p>
       </div>

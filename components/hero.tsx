@@ -19,14 +19,14 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col gap-1">
-            <div className="border-secondary-outline rounded-10px flex max-w-[418px] items-center gap-2 border-2 bg-white p-1.5 pl-4">
+            <div className="rounded-10px flex max-w-[418px] items-center gap-2 border-2 border-secondary-outline bg-white p-1.5 pl-4">
               <SearchHeartIcon className="mr-1" />
               <input
                 type="text"
                 placeholder="এখানে দোয়া সার্চ করুন...."
                 className="min-w-full flex-grow text-sm [all:unset] placeholder:text-sm"
               />
-              <button className="primary-btn border-primary-outline rounded-10px ml-auto flex items-center gap-1.5 border-2 px-5 py-2 text-sm font-semibold text-white">
+              <button className="primary-btn rounded-10px ml-auto flex items-center gap-1.5 border-2 border-primary-outline px-5 py-2 text-sm font-semibold text-white">
                 সার্চ করুন <SearchIcon />
               </button>
             </div>
