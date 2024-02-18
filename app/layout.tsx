@@ -1,3 +1,4 @@
+import { Nav } from "$components/nav";
 import { Provider } from "$context";
 import "$styles/global.css";
 import { Metadata } from "next";
@@ -40,7 +41,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body
         className={`font-hind grid h-screen content-between ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined}`}
       >
-        <Provider>{children}</Provider>
+        <Provider>
+          <Nav />
+          {children}
+        </Provider>
       </body>
     </html>
   );

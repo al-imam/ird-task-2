@@ -2,83 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
   :root {
-    --max-aside-hight: 56.25rem;
-  }
-
-  .layout-2xl {
-    grid-template-columns: 105px 429px 1fr 330px;
-  }
-
-  .layout-xl {
-    --top-nav-size: 2.875rem;
-    grid-template-rows: var(--top-nav-size) 1fr;
-    grid-template-columns: 105px 429px 1fr;
-  }
-
-  .layout-lg {
-    --layout-gap: 1.675rem;
-    grid-template-columns: 429px 1fr;
+    --nav-size: 2.875rem;
   }
 }
 
-@layer utilities {
-  .dua-player {
-    background: transparent !important;
-    padding: 0 !important;
-    box-shadow: unset !important;
+@layer components {
+  .h-nav {
+    height: var(--nav-size);
   }
 
-  .dua-player :is(.rhap_forward-button, .rhap_rewind-button, .rhap_progress-section) {
-    @apply hidden;
-  }
-
-  .dua-player * {
-    @apply m-0;
-  }
-
-  .dua-player .rhap_controls-section {
-    @apply m-0 items-center justify-start gap-4;
-  }
-
-  .dua-player .rhap_play-pause-button {
-    @apply h-11 w-11 rounded-full;
-  }
-
-  .dua-player .rhap_play-pause-button svg {
-    @apply h-11 w-11;
-  }
-
-  .dua-player .rhap_controls-section svg {
-    @apply text-primary;
-  }
-
-  .dua-player .rhap_progress-container {
-    @apply max-w-28;
-  }
-
-  .dua-player .rhap_progress-indicator {
-    @apply -top-1.5 h-4 w-4 bg-primary shadow-none;
-  }
-
-  .dua-player .rhap_progress-filled {
-    @apply bg-primary;
-  }
-
-  .dua-player .rhap_current-left-time {
-    @apply text-foreground;
-  }
-
-  .dua-player .rhap_progress-bar {
-    @apply h-1;
-  }
-
-  .dua-player-sm :is(.rhap_progress-container, .rhap_current-left-time) {
-    @apply hidden;
-  }
-
-  .dua-player-sm .rhap_controls-section {
-    @apply gap-2;
+  .primary-btn {
+    background: linear-gradient(0deg, #52a76f, #52a76f), linear-gradient(0deg, #71bf8c, #71bf8c);
   }
 }
